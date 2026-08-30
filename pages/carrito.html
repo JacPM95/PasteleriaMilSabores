@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Pastelería 1000 Sabores</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="Logo Pastelería" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html" class="active">🛒 Carrito (<span id="cant-carrito">0</span>)</a>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 850px; margin: 40px auto; padding: 0 20px;">
+        <h2 style="font-family: Georgia, serif; color: #8B4513; font-size: 2.2rem; margin-bottom: 25px;">Resumen del Carrito</h2>
+
+        <!-- DETALLE DE LOS PRODUCTOS (AQUÍ SE DIBUJAN CON EL +, EL - Y EL SUBTOTAL) -->
+        <div id="contenedor-carrito"></div>
+
+        <!-- TOTAL GENERAL Y BOTONES -->
+        <div class="resumen-pago" style="margin-top: 30px; background: #FFF8E7; padding: 20px; border-radius: 10px; border: 1px solid #FFE0B2;">
+            <h3 id="total-carrito" style="font-size: 1.6rem; color: #8B4513; margin-bottom: 15px;">Total a pagar: $0 CLP</h3>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <button class="btn" onclick="procesarPago()" style="background-color: #8B4513; color: white; border: none; padding: 12px 24px; border-radius: 25px; cursor: pointer; font-weight: bold; font-size: 1rem;">Pagar y Confirmar Pedido</button>
+                <button onclick="vaciarCarrito()" style="background-color: #DC3545; color: white; border: none; padding: 12px 20px; border-radius: 25px; cursor: pointer; font-size: 0.95rem;">Vaciar Carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

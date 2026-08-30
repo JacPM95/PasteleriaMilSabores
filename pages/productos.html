@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Pastelería 1000 Sabores</title>
+    <!-- Asegúrate de que la carpeta css esté afuera de 'pages' -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="Logo Pastelería 1000 Sabores" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html" class="active">Productos</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="login.html">Registro / Login</a>
+            <a href="carrito.html" class="btn">🛒 Carrito (<span id="cant-carrito">0</span>)</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Catálogo de Productos</h2>
+        <br>
+        <div class="card-filtro">
+            <input type="text" id="buscar-input" placeholder="Buscar producto..." onkeyup="buscar()" style="flex: 1;">
+            <select id="categoria-select" onchange="buscar()" style="flex: 1;">
+                <option value="">Todas las Categorías</option>
+                <option value="Tortas Cuadradas">Tortas Cuadradas</option>
+                <option value="Tortas Circulares">Tortas Circulares</option>
+                <option value="Postres Individuales">Postres Individuales</option>
+                <option value="Productos Sin Azúcar">Productos Sin Azúcar</option>
+                <option value="Pastelería Tradicional">Pastelería Tradicional</option>
+                <option value="Productos sin gluten">Productos sin gluten</option>
+                <option value="Productos Vegana">Productos Vegana</option>
+                <option value="Tortas Especiales">Tortas Especiales</option>
+            </select>
+        </div>
+
+        <div class="grid-container" id="grid-productos"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pastelería 1000 Sabores - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

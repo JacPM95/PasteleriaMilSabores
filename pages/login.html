@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Pastelería 1000 Sabores</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background-color: #FFF5E1; color: #5D4037; margin: 0; font-family: 'Lato', sans-serif;">
+
+    <header style="padding: 10px 25px; background: white; border-bottom: 2px solid #FFC0CB;">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="Logo Pastelería 1000 Sabores" class="logo-img" style="max-height: 45px;">
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="login.html" class="active">Registro / Login</a>
+            <a href="carrito.html" class="btn">🛒 Carrito (<span id="cant-carrito">0</span>)</a>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 600px; margin: 40px auto; padding: 0 20px;">
+
+        <!-- TARJETA DEL FORMULARIO DE REGISTRO -->
+        <section style="background: #FFFFFF; padding: 30px; border-radius: 12px; border: 1px solid #FFE0B2; box-shadow: 0 4px 15px rgba(139, 69, 19, 0.08);">
+            
+            <h1 style="font-family: 'Pacifico', cursive; color: #8B4513; font-size: 2.2rem; text-align: center; margin: 0 0 25px 0;">
+                Formulario de Registro
+            </h1>
+
+            <form style="display: flex; flex-direction: column; gap: 18px;">
+
+                <!-- Nombre Completo -->
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label for="nombre" style="font-weight: bold; font-size: 0.95rem;">Nombre Completo:</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre y apellido" style="padding: 11px; border: 1px solid #CCC; border-radius: 8px; font-family: 'Lato', sans-serif; font-size: 0.95rem; width: 100%; box-sizing: border-box;">
+                </div>
+
+                <!-- Correo Electrónico -->
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label for="email" style="font-weight: bold; font-size: 0.95rem;">Correo Electrónico:</label>
+                    <input type="email" id="email" placeholder="correo@ejemplo.com" style="padding: 11px; border: 1px solid #CCC; border-radius: 8px; font-family: 'Lato', sans-serif; font-size: 0.95rem; width: 100%; box-sizing: border-box;">
+                </div>
+
+                <!-- Teléfono de Contacto -->
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label for="telefono" style="font-weight: bold; font-size: 0.95rem;">Teléfono de Contacto:</label>
+                    <input type="tel" id="telefono" placeholder="+56 9 1234 5678" style="padding: 11px; border: 1px solid #CCC; border-radius: 8px; font-family: 'Lato', sans-serif; font-size: 0.95rem; width: 100%; box-sizing: border-box;">
+                </div>
+
+                <!-- Dirección de Entrega -->
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label for="direccion" style="font-weight: bold; font-size: 0.95rem;">Dirección de Entrega:</label>
+                    <input type="text" id="direccion" placeholder="Calle, número, depto / casa" style="padding: 11px; border: 1px solid #CCC; border-radius: 8px; font-family: 'Lato', sans-serif; font-size: 0.95rem; width: 100%; box-sizing: border-box;">
+                </div>
+
+                <!-- Región -->
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label for="region" style="font-weight: bold; font-size: 0.95rem;">Región:</label>
+                    <select id="region" style="padding: 11px; border: 1px solid #CCC; border-radius: 8px; font-family: 'Lato', sans-serif; font-size: 0.95rem; width: 100%; box-sizing: border-box; background-color: #FFF;">
+                        <option value="">Selecciona tu región...</option>
+                        <option value="metropolitana">Región Metropolitana</option>
+                        <option value="valparaiso">Valparaíso</option>
+                        <option value="biobio">Biobío</option>
+                    </select>
+                </div>
+
+                <!-- Edad -->
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label for="edad" style="font-weight: bold; font-size: 0.95rem;">Edad:</label>
+                    <input type="number" id="edad" placeholder="Ej: 25" style="padding: 11px; border: 1px solid #CCC; border-radius: 8px; font-family: 'Lato', sans-serif; font-size: 0.95rem; width: 100%; box-sizing: border-box;">
+                </div>
+
+                <!-- Código Promocional -->
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label for="promo" style="font-weight: bold; font-size: 0.95rem;">Código Promocional (Opcional):</label>
+                    <input type="text" id="promo" placeholder="Ejemplo: FELICES50" style="padding: 11px; border: 1px solid #CCC; border-radius: 8px; font-family: 'Lato', sans-serif; font-size: 0.95rem; width: 100%; box-sizing: border-box;">
+                </div>
+
+                <!-- Botón de Envío -->
+                <div style="margin-top: 10px; text-align: center;">
+                    <button type="button" class="btn" style="background-color: #8B4513; color: white; padding: 12px 35px; border: none; border-radius: 20px; font-weight: bold; font-size: 1rem; cursor: pointer; width: 100%;">
+                        Registrarse
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer style="text-align: center; padding: 15px; color: #666; background-color: #FFFFFF; border-top: 2px solid #FFC0CB; margin-top: 40px;">
+        <p style="margin: 0; font-size: 0.85rem;">&copy; 2026 Pastelería 1000 Sabores - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

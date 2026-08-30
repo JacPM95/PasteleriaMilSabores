@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Pastelería 1000 Sabores</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; margin: 0; background-color: #FFF8E7;">
+
+    <header style="padding: 10px 20px; background: white;">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo Pastelería 1000 Sabores" class="logo-img" style="max-height: 45px;">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="pages/nosotros.html">Nosotros</a>
+            <a href="pages/productos.html">Productos</a>
+            <a href="pages/blog.html">Blog</a>
+            <a href="pages/contacto.html">Contacto</a>
+            <a href="pages/login.html">Registro / Login</a>
+            <a href="pages/carrito.html" class="btn">🛒 Carrito (<span id="cant-carrito">0</span>)</a>
+        </nav>
+    </header>
+
+    <main class="container" style="text-align: center; margin: 10px auto; padding: 0 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        
+        <!-- TÍTULO PRINCIPAL EN LA PARTE SUPERIOR -->
+        <section class="banner-inicio" style="margin-bottom: 8px;">
+            <h1 style="font-family: 'Playfair Display', Georgia, serif; color: #8B4513; font-size: 1.5rem; margin: 0 0 3px 0; font-weight: bold;">
+                🎂 ¡Celebra la dulzura de la vida con Pastelería 1000 Sabores! 🍰
+            </h1>
+            <p style="color: #5D4037; font-size: 0.9rem; margin: 0;">Los mejores sabores artesanales para hacer de cada momento una dulce celebración.</p>
+        </section>
+
+        <!-- 1. IMAGEN DE LOS CHEFS -->
+        <section class="imagen-principal-container" style="margin: 6px 0;">
+            <img src="img/Pagina_inicio.png" alt="Pastelería 1000 Sabores - Imagen Principal" style="max-height: 28vh; width: auto; max-width: 100%; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); object-fit: contain;">
+        </section>
+
+        <!-- 2. BLOQUE DEBAJO DE LA IMAGEN (LOGO MÁS GRANDE Y TEXTOS) -->
+        <section style="margin: 8px 0; text-align: center;">
+            
+            <!-- Logo Cupcake Ilustrado (Aumentado de tamaño) -->
+            <div style="margin: 6px 0;">
+                <img src="img/logo.png" alt="Logo Ilustrado Pastelería" style="max-height: 110px; width: auto; display: inline-block;">
+            </div>
+
+            <!-- Textos explicativos -->
+            <p style="margin: 6px 0 2px 0; color: #333; font-size: 0.95rem;">
+                Estamos emocionados de compartir nuestras delicias contigo.
+            </p>
+            <p style="margin: 0; color: #000; font-size: 1rem; font-weight: bold;">
+                Descubre, saborea y crea momentos inolvidables con nosotros.
+            </p>
+        </section>
+
+        <!-- BOTÓN DIRECTO AL CATÁLOGO -->
+        <div style="margin-top: 10px;">
+            <a href="pages/productos.html" class="btn" style="background-color: #8B4513; color: white; padding: 8px 22px; text-decoration: none; border-radius: 20px; font-weight: bold; font-size: 0.9rem; display: inline-block;">Ver Catálogo de Productos</a>
+        </div>
+
+    </main>
+
+    <footer style="text-align: center; padding: 8px; color: #666; background-color: #FFF5E1;">
+        <p style="margin: 0; font-size: 0.8rem;">&copy; 2026 Pastelería 1000 Sabores - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

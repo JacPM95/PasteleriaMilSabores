@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Envíos - Pastelería 1000 Sabores</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background-color: #FFF5E1; color: #5D4037; margin: 0; font-family: 'Lato', sans-serif;">
+
+    <header style="padding: 10px 25px; background: white; border-bottom: 2px solid #FFC0CB;">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="Logo Pastelería 1000 Sabores" class="logo-img" style="max-height: 45px;">
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html" class="active">Contacto</a>
+            <a href="login.html">Registro / Login</a>
+            <a href="carrito.html" class="btn">🛒 Carrito (<span id="cant-carrito">0</span>)</a>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 800px; margin: 30px auto; padding: 0 20px;">
+
+        <h1 style="font-family: 'Pacifico', cursive; color: #8B4513; font-size: 2.2rem; text-align: center; margin-bottom: 25px;">
+            Contacto y Servicios
+        </h1>
+
+        <div style="display: flex; flex-direction: column; gap: 25px;">
+
+            <!-- BLOQUE 1: GESTIÓN Y CONSULTA DE ENVÍOS -->
+            <section style="background: #FFFFFF; padding: 25px; border-radius: 12px; border: 1px solid #FFE0B2; box-shadow: 0 3px 10px rgba(139, 69, 19, 0.06);">
+                <h2 style="font-family: 'Pacifico', cursive; color: #8B4513; font-size: 1.6rem; margin: 0 0 15px 0;">
+                    Gestión y Consulta de Envíos
+                </h2>
+
+                <form style="display: flex; flex-direction: column; gap: 15px;">
+                    <div style="display: flex; flex-direction: column; gap: 5px; text-align: left;">
+                        <label for="fecha-entrega" style="font-weight: bold; font-size: 0.95rem;">Fecha de Entrega Programada:</label>
+                        <input type="date" id="fecha-entrega" style="padding: 10px; border: 1px solid #CCC; border-radius: 6px; font-family: 'Lato', sans-serif; width: 100%; max-width: 300px;">
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 5px; text-align: left;">
+                        <label for="num-pedido" style="font-weight: bold; font-size: 0.95rem;">Número de Pedido / Boleta:</label>
+                        <input type="text" id="num-pedido" placeholder="Ej: PED-1001" style="padding: 10px; border: 1px solid #CCC; border-radius: 6px; font-family: 'Lato', sans-serif; width: 100%; max-width: 300px;">
+                    </div>
+
+                    <div style="margin-top: 10px;">
+                        <button type="button" class="btn" style="background-color: #8B4513; color: white; padding: 10px 20px; border: none; border-radius: 20px; font-weight: bold; cursor: pointer;">
+                            Consultar Estado de Envío
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- BLOQUE 2: DIFUSIÓN Y REDES SOCIALES -->
+            <section style="background: #FFFFFF; padding: 25px; border-radius: 12px; border: 1px solid #FFE0B2; box-shadow: 0 3px 10px rgba(139, 69, 19, 0.06);">
+                <h2 style="font-family: 'Pacifico', cursive; color: #8B4513; font-size: 1.6rem; margin: 0 0 10px 0;">
+                    Difusión y Redes Sociales
+                </h2>
+                <p style="margin: 0 0 15px 0; color: #5D4037; font-size: 0.95rem;">
+                    ¡Comparte nuestras promociones en tus redes sociales preferidas!
+                </p>
+
+                <div>
+                    <button type="button" class="btn" style="background-color: #8B4513; color: white; padding: 10px 20px; border: none; border-radius: 20px; font-weight: bold; cursor: pointer;">
+                        Compartir en Redes Sociales
+                    </button>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer style="text-align: center; padding: 15px; color: #666; background-color: #FFFFFF; border-top: 2px solid #FFC0CB; margin-top: 40px;">
+        <p style="margin: 0; font-size: 0.85rem;">&copy; 2026 Pastelería 1000 Sabores - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
