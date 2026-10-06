@@ -1,0 +1,17 @@
+:root { font-family: Arial, sans-serif; color: #3f302a; background: #fff8e7; }
+body { margin: 0; background: #fff8e7; }
+.logo { width: 86px; height: 70px; object-fit: contain; }
+.border-rosa { border-color: #f3a6b8 !important; }
+.color-cafe { color: #8b4513; }
+.btn-cafe { background: #9a4c10; border-color: #9a4c10; color: white; }
+.btn-cafe:hover, .btn-cafe:focus { background: #71370b; border-color: #71370b; color: white; }
+.nav-link.active { color: #9a4c10 !important; }
+.producto-card { border: 1px solid #edd2a8; }
+.producto-img { height: 230px; object-fit: cover; }
+.imagen-inicio { max-height: 430px; object-fit: cover; }
+.contenido-estrecho { max-width: 900px; }
+.formulario-angosto { max-width: 600px; }
+.buscador { max-width: 320px; }
+.alert-beige { background: #f6e7cf; border: 1px solid #e4c18b; color: #593716; }
+footer { background: #fff3df; border-top: 2px solid #f3a6b8; }
+@media (max-width: 767px) { .buscador { max-width: none; margin-top: 1rem; } .logo { width: 70px; } }
